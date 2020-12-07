@@ -114,6 +114,7 @@ registerBlockType( 'cgb/block-quotable-block', {
 				<InspectorControls>
 					<PanelBody title={ __('Quotable Block Settings') }>
 						<PanelRow>
+							<label>Quotation Font Colour</label>
 							<ColorPicker
             					color={ quotationColour }
             					onChangeComplete={ setQuotationColour }
@@ -121,6 +122,7 @@ registerBlockType( 'cgb/block-quotable-block', {
         					/>
 						</PanelRow>
 						<PanelRow>
+							<label>Attribution Font Colour</label>
 							<ColorPicker
             					color={ attributionColour }
             					onChangeComplete={ setAttributionColour }
