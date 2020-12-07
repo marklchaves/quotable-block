@@ -17,6 +17,7 @@ const { PanelBody, PanelRow } = wp.components;
 const { Fragment } = wp.element;
 
 import { TextControl } from '@wordpress/components';
+import { TextareaControl } from '@wordpress/components';
 import { ColorPicker } from '@wordpress/components';
 
 /**
@@ -34,7 +35,7 @@ import { ColorPicker } from '@wordpress/components';
  */
 registerBlockType( 'cgb/block-quotable-block', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'quotable-block - CGB Block' ), // Block title.
+	title: __( 'Quotable Block' ), // Block title.
 	icon: 'shield', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
@@ -130,22 +131,22 @@ registerBlockType( 'cgb/block-quotable-block', {
 				</InspectorControls>
 				<section id="quotable-edit-area">
 					<div className="">
-						<TextControl
-								label="Quotation (h3)"
-								id="quotation-text"
-								value={ quotationText }
-								placeholder="It's a long way to the top if you wanna rock 'n' roll."
-        						onChange={ setQuotationText }
-    						/>
+						<TextareaControl
+							label="Quotation (h3)"
+							id="quotation-text"
+							value={ quotationText }
+							placeholder="It's a long way to the top if you wanna rock 'n' roll."
+							onChange={ setQuotationText }
+						/>
 					</div>
 					<div className="">
 						<TextControl
-								label="Attribution (p)"
-								id="attribution-text"
-								value={ attributionText }
-								placeholder="AC/DC"
-        						onChange={ setAttributionText }
-    						/>						
+							label="Attribution (p)"
+							id="attribution-text"
+							value={ attributionText }
+							placeholder="AC/DC"
+        					onChange={ setAttributionText }
+    					/>						
 					</div>
 				</section>
 			</Fragment>
