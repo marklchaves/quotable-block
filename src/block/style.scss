@@ -5,10 +5,39 @@
  */
 
 .wp-block-cgb-block-quotable-block  {
-  background: $red;
-  border: 0.2rem solid $black;
-  color: $black;
   margin: 0 auto;
-  max-width: 740px;
   padding: 2rem;
+}
+
+.wp-block-cgb-block-quotable-block:hover {
+  cursor: pointer;
+}
+
+/* Tooltip container */
+.qtooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.qtooltip .qtooltiptext {
+  visibility: hidden;
+  width: 5rem;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 1% .5%;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.qtooltip:hover .qtooltiptext {
+  visibility: visible;
 }

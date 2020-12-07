@@ -1,2 +1,5 @@
-# quotable-block
- A custom Gutenberg block for posting quotes. Supports copy/paste.
+# Quotable Block
+
+A simple custom Gutenberg block for posting quotes that supports copy/paste.
+
+---

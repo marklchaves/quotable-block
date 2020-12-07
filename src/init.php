@@ -13,6 +13,34 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+// Not working inside the main enqueue function below, 
+// so forcing it here for the edit page.
+function enqueue_clipboard_javascript()
+{
+	// Add to header section for now.
+	wp_register_script(
+		'quotable-clipboard', 
+		plugins_url('/dist/clipboard.min.js', dirname(__FILE__)),
+		array(), 
+		'2.0.6', 
+		false
+	);
+
+	wp_enqueue_script('quotable-clipboard');
+
+	// Add to footer section.
+	wp_register_script(
+		'quotable', 
+		plugins_url('/dist/quotable.js', dirname(__FILE__)),
+		array(), 
+		'1', 
+		true
+	);
+
+	wp_enqueue_script('quotable');
+}
+add_action('wp_enqueue_scripts', 'enqueue_clipboard_javascript');
+
 /**
  * Enqueue Gutenberg block assets for both frontend + backend.
  *
