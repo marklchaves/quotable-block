@@ -21,12 +21,22 @@ The Quotable Block plugin allows your readers to copy a quote from your posts/pa
 
 ## Usage
 
+### Create a Quotable Block
+
 1. Open a page or post in Gutenberg.
 2. Click on the + to add a block.
 3. Start typing "Quotable Block" until you see the block appear, then select it.
 4. Inside the block, enter your quote and attribution into the respective input fields.
 5. In the settings sidebar, use the colour picker to customise the colours for the quote and attribution.
-6. Preview, Update, or Publish your page or post and enjoy ;-)
+6. Preview, Update, or Publish your post or page.
+
+### Copy a Quote
+
+1. Visit your published post/page where you created a Quotable Block.
+2. Hover over and click the quotation. The quote and attribution are copied to the clipboard.
+3. Paste the the quotation where you want. The quote and attribution are pasted.
+
+Note: The Quotable Block works best with quotes that are all in 1 line. Any newlines will be ignored.
 
 ---
 
