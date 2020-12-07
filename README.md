@@ -14,7 +14,7 @@ The Quotable Block plugin allows your readers to copy a quote from your posts/pa
 
 ## Installation
 
-1. Upload the contents of plugin zip file to the /wp-content/plugins/quotable-block directory, or install the plugin through the WordPress plugins **Add New** page.
+1. Upload the contents of plugin [zip file](https://github.com/marklchaves/quotable-block/releases/download/v1.0.0/quotable-block.zip) to the /wp-content/plugins/quotable-block directory, or install the plugin through the WordPress plugins **Add New** page.
 2. Activate the plugin through the **Plugins** page.
 
 ---
