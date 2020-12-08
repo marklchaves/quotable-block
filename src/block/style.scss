@@ -29,12 +29,11 @@
   text-align: center;
   padding: 1% .5%;
   border-radius: 6px;
+  min-width: 15rem;
  
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
-  top: -5px;
-  left: 105%;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */

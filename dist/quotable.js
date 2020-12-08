@@ -7,5 +7,5 @@ let quotableClipboard = new ClipboardJS(".quotable", {
 });
 
 quotableClipboard.on('success', function(e) {
-  alert('Copied!');
+  alert('Quote copied!');
 });
