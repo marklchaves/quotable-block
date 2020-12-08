@@ -10,6 +10,8 @@ Did you ever want to give your readers the ability to copy/paste a quote from yo
 
 The Quotable Block plugin allows your readers to copy a quote from your posts/pages with 1 click.
 
+[See the live demo.](https://streetphotography.blog/hello-world/)
+
 ---
 
 ## Installation
