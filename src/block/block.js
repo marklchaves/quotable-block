@@ -1,8 +1,7 @@
 /**
  * BLOCK: quotable-block
  *
- * Registering a basic block with Gutenberg.
- * Simple block, renders and saves the same content without any interactivity.
+ * Register the Quotable Block Gutenberg block.
  */
 
 //  Import CSS.
@@ -55,7 +54,7 @@ registerBlockType( 'cgb/block-quotable-block', {
 		},
 		descriptionColour: {
 			type: "string",
-			default: "#29abe0",
+			default: "#111",
 		},
 		attributionColour: {
 			type: "string",
@@ -113,7 +112,7 @@ registerBlockType( 'cgb/block-quotable-block', {
 			<Fragment>
 				<InspectorControls>
 					<PanelBody title={ __('Quotable Block Settings') }>
-						<PanelRow>
+						<PanelRow className="quotable-label-row">
 							<label>Quotation Font Colour</label>
 							<ColorPicker
             					color={ quotationColour }
@@ -121,7 +120,7 @@ registerBlockType( 'cgb/block-quotable-block', {
             					disableAlpha
         					/>
 						</PanelRow>
-						<PanelRow>
+						<PanelRow className="quotable-label-row">
 							<label>Attribution Font Colour</label>
 							<ColorPicker
             					color={ attributionColour }
@@ -132,7 +131,7 @@ registerBlockType( 'cgb/block-quotable-block', {
 					</PanelBody>
 				</InspectorControls>
 				<section id="quotable-edit-area">
-					<div className="">
+					<div>
 						<TextareaControl
 							label="Quotation (h3)"
 							id="quotation-text"
@@ -141,7 +140,7 @@ registerBlockType( 'cgb/block-quotable-block', {
 							onChange={ setQuotationText }
 						/>
 					</div>
-					<div className="">
+					<div>
 						<TextControl
 							label="Attribution (p)"
 							id="attribution-text"

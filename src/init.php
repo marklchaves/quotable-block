@@ -41,6 +41,21 @@ function enqueue_clipboard_javascript()
 }
 add_action('wp_enqueue_scripts', 'enqueue_clipboard_javascript');
 
+function admin_enqueue_dom_purify_javascript()
+{
+	// Add to header section for now.
+	wp_register_script(
+		'dom-purify', 
+		plugins_url('/dist/purify.min.js', dirname(__FILE__)),
+		array(), 
+		'2.0.11', 
+		false
+	);
+	
+	wp_enqueue_script('dom-purify');
+}
+add_action('admin_enqueue_scripts', 'admin_enqueue_dom_purify_javascript');
+
 /**
  * Enqueue Gutenberg block assets for both frontend + backend.
  *
